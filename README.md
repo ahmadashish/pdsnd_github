@@ -1,11 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+10 Feb 2021.
 
 ### Project Title
-Replace the Project Title
+Explore_bikeshare_data
 
 ### Description
-Describe what your project is about and what it does
+In this project, the student had to make use of R  to explore data related to bike share systems for three major cities in the United States
+ - Chicago
+ - New York City
+ - Washington.
+
+ The student had to write code to
+ - (a) import the data and answer interesting questions about it by computing descriptive statistics
+  - (b) write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
+
 
 ### Files used
 Include the files used
