@@ -92,7 +92,7 @@ print(table(ny$month))
 print(table(chi$month))
 print(table(wash$month))
 
-length(unique(ny$Start.Station))
+
 
 top10_Start.Station <- sort(table(ny$Start.Station), decreasing = TRUE)
 head(top10_Start.Station, n = 10)
