@@ -88,9 +88,7 @@ HW <- ggplot(wash) + geom_bar(aes(x = hour))
 
 HW + ggtitle("the count of rents for each Hour of day")
 
-print(table(ny$month))
-print(table(chi$month))
-print(table(wash$month))
+
 
 
 
