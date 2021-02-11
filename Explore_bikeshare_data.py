@@ -88,78 +88,9 @@ HW <- ggplot(wash) + geom_bar(aes(x = hour))
 
 HW + ggtitle("the count of rents for each Hour of day")
 
-print(table(ny$month))
-print(table(chi$month))
-print(table(wash$month))
 
 
 
-top10_Start.Station <- sort(table(ny$Start.Station), decreasing = TRUE)
-head(top10_Start.Station, n = 10)
-
-length(unique(ny$End.Station))
-
-top10_End.Station <- sort(table(ny$End.Station), decreasing = TRUE)
-head(top10_End.Station, n = 10)
-
-length(unique(chi$Start.Station))
-
-top10_Start.Station <- sort(table(chi$Start.Station), decreasing = TRUE)
-head(top10_Start.Station, n = 10)
-
-length(unique(chi$End.Station))
-
-top10_End.Station <- sort(table(chi$End.Station), decreasing = TRUE)
-head(top10_End.Station, n = 10)
-
-length(unique(wash$Start.Station))
-
-top10_Start.Station <- sort(table(wash$Start.Station), decreasing = TRUE)
-head(top10_Start.Station, n = 10)
-
-length(unique(wash$End.Station))
-
-top10_End.Station <- sort(table(wash$End.Station), decreasing = TRUE)
-head(top10_End.Station, n = 10)
-
-summary(ny$Trip.Duration)
-
-ggplot(ny,aes(x= Trip.Duration))+
-  geom_histogram(binwidth = 300, color = 'black', fill = '#099DD9')+
-  ylab('Number of riders')+
-  ggtitle("Initial Histogram of Distribution of riders Trip Duration in NY")
-
-ggplot(ny, aes(x= Trip.Duration))+
-  geom_histogram(binwidth = 300, color = 'black', fill = '#099DD9')+
-  coord_cartesian(xlim=c(61,4000))+
-  ylab('Number of riders')+
-  ggtitle('Histogram of riders Trip Duration in NY with values between 61 and 4000')
-
-summary(chi$Trip.Duration)
-
-ggplot(chi,aes(x= Trip.Duration))+
-  geom_histogram(binwidth = 300, color = 'black', fill = '#099DD9')+
-  ylab('Number of riders')+
-  ggtitle("Initial Histogram of Distribution of riders Trip Duration in chi")
-
-ggplot(chi, aes(x= Trip.Duration))+
-  geom_histogram(binwidth = 300, color = 'black', fill = '#099DD9')+
-  coord_cartesian(xlim=c(60,6000))+
-  ylab('Number of riders')+
-  ggtitle('Histogram of riders Trip Duration in chi with values between 61 and 4000')
-
-summary(wash$Trip.Duration)
-
-ggplot(wash,aes(x= Trip.Duration))+
-  geom_histogram(binwidth = 300, color = 'black', fill = '#099DD9')+
-  ylab('Number of riders')+
-  ggtitle("Initial Histogram of Distribution of riders Trip Duration in wash")
-
-ggplot(wash, aes(x= Trip.Duration))+
-  geom_histogram(binwidth = 300, color = 'black', fill = '#099DD9')+
-  coord_cartesian(xlim=c(60,7000))+
-  ylab('Number of riders')+
-  ggtitle('Histogram of riders Trip Duration in wash with values between 61 and 4000')
 
 
 system('python -m nbconvert Explore_bikeshare_data.ipynb')

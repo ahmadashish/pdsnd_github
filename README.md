@@ -12,7 +12,7 @@ In this project, the student had to make use of R  to explore data related to bi
 
  The student had to write code to
  - (a) import the data and answer interesting questions about it by computing descriptive statistics
-  - (b) write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
+
 
 
 ### Files used
